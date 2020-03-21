@@ -22,6 +22,12 @@ namespace Claire.Controllers
             return View(model);
         }
 
+
+        public ActionResult Create()
+        {
+            ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "StylistName");
+            return View();
+        }
         [HttpPost]
         public ActionResult Create(Client client)
         {
@@ -30,10 +36,12 @@ namespace Claire.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult Create()
+        [HttpPost]
+        public ActionResult Edit(Client client)
         {
-            ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "StylistName");
-            return View();
+            _db.Entry(client).State = EntityState.Modified;
+            _db.SaveChanges();
+            return RedirectToAction("Index");
         }
 
         public ActionResult Details(int id)
@@ -48,5 +56,21 @@ namespace Claire.Controllers
             ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "StylistName");
             return View(aClient);
         }
+        [HttpPost, ActionName("Delete")]
+        public ActionResult DeleteConfirmed(int id)
+        {
+            var aClient = _db.Clients.FirstOrDefault(clients => clients.ClientId == id);
+            _db.Clients.Remove(aClient);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult Delete(int id)
+        {
+            var aClient = _db.Clients.FirstOrDefault(clients => clients.ClientId == id);
+            return View(aClient);
+        }
+
+
     }
 }
