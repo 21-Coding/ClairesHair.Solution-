@@ -15,14 +15,11 @@ namespace Claire.Controllers
         {
             _db = db; 
         }
-
         public ActionResult Index()
         {
             List<Client> model = _db.Clients.Include(clients => clients.Stylist).ToList();
             return View(model);
         }
-
-
         public ActionResult Create()
         {
             ViewBag.StylistId = new SelectList(_db.Stylists, "StylistId", "StylistName");
@@ -35,7 +32,6 @@ namespace Claire.Controllers
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
-
         [HttpPost]
         public ActionResult Edit(Client client)
         {
@@ -43,7 +39,6 @@ namespace Claire.Controllers
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
-
         public ActionResult Details(int id)
         {
             Client aClient = _db.Clients.FirstOrDefault(clients => clients.ClientId == id);
@@ -64,13 +59,10 @@ namespace Claire.Controllers
             _db.SaveChanges();
             return RedirectToAction("Index");
         }
-
         public ActionResult Delete(int id)
         {
             var aClient = _db.Clients.FirstOrDefault(clients => clients.ClientId == id);
             return View(aClient);
         }
-
-
     }
 }
