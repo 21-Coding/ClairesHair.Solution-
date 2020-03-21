@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
-using BestRestaurants.Models;
+using Claire.Models;
 
-namespace BestRestaurants
+namespace Claire
 {
   public class Startup
   {
