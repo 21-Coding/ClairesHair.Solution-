@@ -1,4 +1,4 @@
-using System.Collection.Generic;
+using System.Collections.Generic;
 
 namespace Claire.Models
 {
@@ -10,7 +10,7 @@ namespace Claire.Models
         public  string Phone { get; set; }
         public int StylistId { get; set; }
         public virtual Stylist Stylist { get; set; }
-        
+
         
     }
 }

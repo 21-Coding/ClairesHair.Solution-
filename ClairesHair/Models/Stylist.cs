@@ -1,4 +1,4 @@
-using Stystem.Collections.Generic;
+using System.Collections.Generic;
 
 namespace Claire.Models
 {

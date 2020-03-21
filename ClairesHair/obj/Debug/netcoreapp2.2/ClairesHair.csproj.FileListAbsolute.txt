@@ -1,0 +1,6 @@
+/Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/ClairesHair.csprojAssemblyReference.cache
+/Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/ClairesHair.csproj.CoreCompileInputs.cache
+/Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/ClairesHair.RazorAssemblyInfo.cache
+/Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/ClairesHair.RazorAssemblyInfo.cs
+/Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/ClairesHair.AssemblyInfoInputs.cache
+/Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/ClairesHair.AssemblyInfo.cs
