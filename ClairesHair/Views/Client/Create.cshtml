@@ -1,0 +1,14 @@
+@{
+    Layout = "_Layout";
+}
+
+@model Claire.Models.Client
+
+<h3 class="col-md-6 offset-md-3">
+    @using (Html.BeginForm())
+    {
+        <div class="form-group">
+        Client's Name: @Html.TextBoxFor(model => model.Phone, new { @class = "form-control", required = "required"})
+        </div>
+        
+    }
