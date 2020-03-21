@@ -4,13 +4,16 @@ namespace Claire.Models
 {
     public class Stylist
     {
-        public int StylistId { get; set; }
-        public string Name { get; set; }
-        public string Location { get; set; }
-        public string Rating { get; set; }
-        public string Review { get; set; }
-        public int ClientsId { get; set; }
-        public virtual Clients clients { get; set; }
+       public Stylist()
+       {
+           this.Clients = new HashSet<Client>();
+       }
+
+       public int StylistId { get; set; }
+       public string StylistName { get; set; }
+       public string StylistCell { get; set; } 
+       public string Skillset { get; set; }
+       public virtual ICollection<Client> Clients { get; set; }
 
     }
 }
