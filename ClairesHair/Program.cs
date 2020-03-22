@@ -8,7 +8,13 @@ namespace Claire
         public static void Main()
         {
             var host = new WebHostBuilder()
-            .useKestrel()
+            .UseKestrel()
+            .UseContentRoot(Directory.GetCurrentDirectory())
+            .UseIISIntergration()
+            .UseStartup<Startup>()
+            .Build();
+
+            host.Run();
         }
     }
 }
