@@ -10,7 +10,7 @@ namespace Claire
             var host = new WebHostBuilder()
             .UseKestrel()
             .UseContentRoot(Directory.GetCurrentDirectory())
-            .UseIISIntergration()
+            .UseIISIntegration()
             .UseStartup<Startup>()
             .Build();
 
