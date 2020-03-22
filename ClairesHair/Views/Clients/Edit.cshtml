@@ -1,0 +1,19 @@
+@{
+    Layout = "_Layout";
+}
+
+@model Claire.Model.Client
+
+<h3>Edit Details: @Html.DisplayFor(model => model.ClientName)<h3>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.ClientId)
+    @Html.LabelFor(model => model.ClientName)
+    @Html.EditorFor(model => model.ClientName)
+
+    <input type="submit" value="Save" />
+
+
+}
+<p>@Html.ActionLink("All Cuisines", "Index")</p>
