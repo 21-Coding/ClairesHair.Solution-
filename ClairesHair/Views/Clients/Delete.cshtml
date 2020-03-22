@@ -1,0 +1,19 @@
+@{
+    Layout = "_Layout";
+}
+
+@model Claire.Model.Client
+
+<h3>You are now deleting a client entry!</h3>
+
+Client: @Html.DisplayFor(model => model.ClientName) 
+<br>
+📱Cell: @Html.DisplayFor(model => model.Phone)
+
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Delete" />
+}
+<br>
+<p>@Html.ActionLink("All Clients", "Index")</p>
+<p>@Html.ActionLink("Main", "Index", "Home")</p>
