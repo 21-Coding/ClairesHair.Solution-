@@ -2,18 +2,35 @@
     Layout = "_Layout";
 }
 
-@model Claire.Model.Client
+@model Claire.Models.Client
 
 <h3>Edit Details: @Html.DisplayFor(model => model.ClientName)<h3>
 
+<div class="col-md-6 offset-md-3">
 @using (Html.BeginForm())
 {
-    @Html.HiddenFor(model => model.ClientId)
-    @Html.LabelFor(model => model.ClientName)
-    @Html.EditorFor(model => model.ClientName)
+    <div class="form-group"> @Html.HiddenFor(model => model.ClientId)
+    </div>
 
-    <input type="submit" value="Save" />
+    <div class="form-group">
+    Assigned Stylist:
+    @Html.DropDownList:("StylistId")
+    </div>
+  
+    <div class="form-group">
+    Name:
+    @Html.EditorFor(model => model.ClientName, new { @class = "form-control"})
+    </div>
 
+    <div class="form-group">
+    📱Cell:
+    @Html.EditorFor(model => model.Phone, new { @class = "form-control"})
+    </div>
+
+    <input type="submit" value="Save" class="btn btn-success">
+    
 
 }
-<p>@Html.ActionLink("All Cuisines", "Index")</p>
+</div>
+<p>@Html.ActionLink("All Clients", "Index")</p>
+<p>@Html.ActionLink("Main", "Index", "Home")</p>

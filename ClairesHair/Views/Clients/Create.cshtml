@@ -11,10 +11,10 @@
         Client's Name: @Html.TextBoxFor(model => model.Phone, new { @class = "form-control", required = "required"})
         </div>
         <div class="form-group">
-        Client's Phone Number: @Html.TextBoxFor(model => model.Phone, new { @class = "form-control", required="required" })
+        Client's 📱 Cell: @Html.TextBoxFor(model => model.Phone, new { @class = "form-control", required="required" })
         </div>
         <div class="form-group">
-        <div>Choose a stylist this client: @Html.DropDownList("StylistId")</div>
+        Add a stylist to this Client: @Html.DropDownList("StylistId")</div>
         </div>
 
         <input type="submit" value="Add Client" class="btn btn-outline-success my-2 my-sm-0">

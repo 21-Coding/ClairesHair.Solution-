@@ -18,21 +18,21 @@ namespace Claire.Controllers
 
         public ActionResult Index()
         {
-            List<Stylist> model = _db.Stylist.ToList();
+            List<Stylist> model = _db.Stylists.ToList();
             return View(model);
 
         }
         [HttpPost]
         public ActionResult Create(Stylist stylist)
         {
-            _db.Stylist.Add(stylist);
+            _db.Stylists.Add(stylist);
             _db.SaveChanges();
             return RedirectToAction("Index");
 
         }
         public ActionResult Details(int id)
         {
-            Stylist aStylist = _db.Stylist.FirstOrDefault(stylist => stylist.StylistId == id); aStylist.Clients = _db.Clients.Where(clients => clients.StylistId == id).ToList();
+            Stylist aStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id); aStylist.Clients = _db.Clients.Where(clients => clients.StylistId == id).ToList();
             return View(aStylist);
 
         }
@@ -42,7 +42,7 @@ namespace Claire.Controllers
         }
         public ActionResult Edit(int id)
         {
-            var aStylist = _db.Stylist.FirstOrDefault(stylist => stylist.StylistId == id);
+            var aStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
             return View(aStylist);
         }
         [HttpPost]
@@ -54,14 +54,14 @@ namespace Claire.Controllers
         }
         public ActionResult Delete(int id)
         {
-            var aStylist = _db.Stylist.FirstOrDefault(stylist => stylist.StylistId == id);
+            var aStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
             return View(aStylist);
         }
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {
-            var aStylist = _db.Stylist.FirstOrDefault(stylist => stylist.StylistId == id);
-            _db.Stylist.Remove(aStylist);
+            var aStylist = _db.Stylists.FirstOrDefault(stylist => stylist.StylistId == id);
+            _db.Stylists.Remove(aStylist);
             _db.SaveChanges();
             return RedirectToAction("Index");
         }

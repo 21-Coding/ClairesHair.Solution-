@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace ClairesHair.Models
+namespace Claire.Models
 {
     public class ClairesHairContext : DbContext
     {
