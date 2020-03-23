@@ -16,11 +16,6 @@
 /Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/Razor/Views/Clients/Index.g.cshtml.cs
 /Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/Razor/Views/Home/Index.g.cshtml.cs
 /Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_Layout.g.cshtml.cs
-/Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/Razor/Views/Stylist/Create.g.cshtml.cs
-/Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/Razor/Views/Stylist/Delete.g.cshtml.cs
-/Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/Razor/Views/Stylist/Details.g.cshtml.cs
-/Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/Razor/Views/Stylist/Edit.g.cshtml.cs
-/Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/Razor/Views/Stylist/Index.g.cshtml.cs
 /Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/ClairesHair.RazorTargetAssemblyInfo.cache
 /Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/ClairesHair.RazorTargetAssemblyInfo.cs
 /Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/bin/Debug/netcoreapp2.2/ClairesHair.deps.json
@@ -32,3 +27,8 @@
 /Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/bin/Debug/netcoreapp2.2/ClairesHair.Views.pdb
 /Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/ClairesHair.Views.pdb
 /Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/ClairesHair.csproj.CopyComplete
+/Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/Razor/Views/Stylists/Create.g.cshtml.cs
+/Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/Razor/Views/Stylists/Delete.g.cshtml.cs
+/Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/Razor/Views/Stylists/Details.g.cshtml.cs
+/Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/Razor/Views/Stylists/Edit.g.cshtml.cs
+/Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/Debug/netcoreapp2.2/Razor/Views/Stylists/Index.g.cshtml.cs
