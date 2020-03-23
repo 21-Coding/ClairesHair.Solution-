@@ -1,0 +1,26 @@
+@{
+    Layout = "_Layout";
+}
+
+@model Claire.Models.Stylist
+<h3>Add a Stylist</h3>
+
+<div class="col-md-6 offset-md-3">
+@using(Html.BeginForm())
+{
+    <div class="form-group">
+        Stylist Name:
+        @Html.TextBoxFor(model => model.StylistName, new { @class = "form-control", requoired = "required"})
+    </div>
+    <div class="form-group">
+        Stylist's Cell📱:
+         @Html.TextBoxFor(model => model.StylistPhone, new { @class = "form-control", required = "required"})
+    </div>   
+
+    <div class="form-group">
+        Skillset: @Html.TextBoxFor(model => model.Skillset, new { @class = "form-control", required = "required"})
+    </div>           
+    <input type="submit" value="Add" class="btn btn-outline-success my-2 my-sm-0">                                             
+}
+</div>
+<p>@Html.ActionLink("Main", "Index", "Home")</p>
