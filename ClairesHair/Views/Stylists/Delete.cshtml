@@ -1,0 +1,15 @@
+@{
+    Layout = "_Layout";
+}
+
+@model Claire.Models.Stylist
+
+<h3>You are now deleting @Html.DisplayFor(model => model.StylistName)!</h3>
+
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Delete" />
+}
+
+<p>@Html.ActionLink("All Stylists", "Index")</p>
+<p>@Html.ActionLink("Main", "Index", "Home")</p>
