@@ -1,0 +1,12 @@
+@{
+    Layout = "_Layout";
+}
+
+@model Claire.Models.Stylist
+
+<h3>Edit Details: @Html.DisplayFor(model => model.StylistName)</h3>
+
+@using(Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.StylistId)
+}
