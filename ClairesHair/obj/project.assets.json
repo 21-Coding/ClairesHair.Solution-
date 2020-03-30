@@ -12168,11 +12168,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/ClairesHair.csproj",
+      "projectUniqueName": "/Users/dominiqueyoumans/Desktop/HairSalon.Solution/ClairesHair/ClairesHair.csproj",
       "projectName": "ClairesHair",
-      "projectPath": "/Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/ClairesHair.csproj",
+      "projectPath": "/Users/dominiqueyoumans/Desktop/HairSalon.Solution/ClairesHair/ClairesHair.csproj",
       "packagesPath": "/Users/dominiqueyoumans/.nuget/packages/",
-      "outputPath": "/Users/dominiqueyoumans/Desktop/ClairesHair.Solution/ClairesHair/obj/",
+      "outputPath": "/Users/dominiqueyoumans/Desktop/HairSalon.Solution/ClairesHair/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
